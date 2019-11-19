@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 int main()
 {
     int num=0, word=0,i;
