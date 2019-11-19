@@ -42,6 +42,33 @@ int main()
         else
             printf("0");
     }
+    //!小数
+    i=0;
+    float num_1;
+    printf("\nPlease input the decimal:");
+    scanf("%f",&num_1);
+    while(i<20)   //!1问题，不能停止输出例如0.25
+    {
+        num_1 = num_1 * 2;
+        if(num_1==0.0)
+            {
+                printf("0");
+            }
+        else
+        {
+            if (num_1>=1)   //! 增加了=1解决了问题
+            {
+                printf("1");
+                num_1 = num_1 - 1;
+            }
+            else
+            {
+                printf("0");
+            }
+        }
+        i++;
+    }
     system("pause");
     return 0;
 }
+
