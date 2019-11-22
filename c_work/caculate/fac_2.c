@@ -17,7 +17,7 @@ int fac(int n)    //注意溢出
     else if(n==0||n==1)
         f = 1;
     else
-        f = fac(n - 1) * n;      //? 过程：n减到1达到递归破除条件  然后开始执行returnn次
+        f = fac(n - 1) * n;      //? 过程：n减到1达到递归破除条件  然后开始执行return n次
     printf("%4d\n", n);
     return f;
 }
