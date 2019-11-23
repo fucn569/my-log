@@ -59,7 +59,6 @@ int ComMul(int num1, int num2)   //公倍数
     int ComDiv(int num1, int num2);
     int Com;
     Com = ComDiv(num1, num2);
-    printf("%d\n", num1 * num2 / Com);
     return num1 * num2 / Com;
 }
 void Add(int number1, int deno1, int number2, int deno2)
