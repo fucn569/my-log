@@ -39,7 +39,7 @@ int match(char *str1, char *str2, int *num, int *pos)
         if(*(str1+i)!=' ')
         {
             for (j = 0; *(str2 + j) != '\0'
-            && *(str1 + i)!=' '&&*(str1 + i)!='.'
+            && *(str1 + i)!=' '&&*(str1 + i)!='.'     //皮一下
             &&*(str1 + i)!=','&&*(str1 + i)!='?'
             &&*(str1 + i)!='!'&&*(str1 + i)!='"'
             &&*(str1 + i)!='\''&&*(str1 + i)!=':'
@@ -58,7 +58,7 @@ int match(char *str1, char *str2, int *num, int *pos)
                 pos[*num] = i - j+1;
                 (*num)++;
             }
-            while(*(str1 + i)!=' '&&*(str1 + i)!='.'
+            while(*(str1 + i)!=' '&&*(str1 + i)!='.'   //皮一下
             &&*(str1 + i)!=','&&*(str1 + i)!='?'
             &&*(str1 + i)!='!'&&*(str1 + i)!='"'
             &&*(str1 + i)!='\''&&*(str1 + i)!=':')
