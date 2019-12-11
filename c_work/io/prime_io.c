@@ -18,9 +18,9 @@ int main()
     }
     fscanf(fp, "%d", &n);
     p = (int *)malloc(n * 5*sizeof(int));
-    for (i = 1; i <=n;i++)
+    for (i = 2; i <=n;i++)
     {
-        if(i==1||i==2||i==3)
+        if(i==2||i==3)
         {
             *(p+m)=i;
             m++;
