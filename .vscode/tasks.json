@@ -4,7 +4,7 @@
     "tasks": [
         {
             "label": "Compile", // 任务名称，与launch.json的preLaunchTask相对应
-            "command": "clang", // 要使用的编译器，C++用clang++；如果编译失败，改成gcc或g++试试，还有问题那就是你自己的代码有错误
+            "command": "clang++", // 要使用的编译器，C++用clang++；如果编译失败，改成gcc或g++试试，还有问题那就是你自己的代码有错误
             "args": [
                 "${file}",
                 "-o", // 指定输出文件名，不加该参数则默认输出a.exe，Linux下默认a.out

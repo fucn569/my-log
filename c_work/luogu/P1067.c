@@ -4,7 +4,7 @@ int main()
     int n;
     int i = 0,j=0; //*遍历量
     int m = 0; //*状态量
-    char in[1000],out[1000];
+    char in[1000],out[1000]={'\0'};
     char *p;
     scanf("%d", &n);     //*多次项次数
     while(getchar()!='\n')                            //! 3 2 2 0 0
@@ -13,13 +13,18 @@ int main()
     p = in;
     if(n==0)
     {
-        return 0;
+        for (i = 0, j = 0; *(p + i) != '\0';i++,j++)
+            out[j] = *(p + i);
     }
     else
     {
     while(*(p+i)!='\0')    //*已完成遍历，在系数为1和0时没解决
     {
-        if(*(p+i)==' ')
+        if(i==0&&*(p+i)=='0')
+        {
+            break;
+        }
+        else if(*(p+i)==' ')
         {
             if(n==0)
                 out[j]='\0';
@@ -39,10 +44,14 @@ int main()
                 m = 0;
             }
         }
-        else if((*(p+i)=='0'&&*(p+i+1)==' '&&m==0)||(*(p+i)=='0'&&*(p+i+1)=='\0'&&m==0))
+        else if(*(p+i)=='0'&&*(p+i+1)==' '&&m==0)
         {
             i += 2;
             n--;
+        }
+        else if((*(p+i)=='0'&&*(p+i+1)=='\0'&&m==0))
+        {
+            break;
         }
         else
         {
