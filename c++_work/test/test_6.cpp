@@ -5,7 +5,7 @@ int main()
     string str;
     cout<<"cin's test':"<<endl;
     cin>>str;
-    cin.sync(); 
+    cin.sync();
     cout<<str<<endl;
     cin>>str;
     cout<<str<<endl;
