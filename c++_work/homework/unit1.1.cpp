@@ -6,10 +6,10 @@
 #include <iostream>
 using namespace std;
 template <class T1>
-void Sort(T1 a[],int b)
+void Sort(T1 a[],int b) //* 传入数组和长度
 {
     int i,j;
-    for (i = 0; i < b;i++)
+    for (i = 0; i < b;i++)  //* 排序
     {
         for (j = i + 1; j < b;j++)
         {

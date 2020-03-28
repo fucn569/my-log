@@ -22,7 +22,8 @@
     "C_Cpp.autocomplete": "Disabled", // 同上；这几条也可以考虑放到全局里，否则很多错误会报两遍，cpptools一遍clangd一遍
     "C_Cpp.suggestSnippets": false, // 同上
 
-    "editor.fontSize": 19, // 同上
+    "editor.fontSize": 21, // 同上
+    "editor.fontFamily": "更纱黑体 CL", // 控制编辑器字体
     "editor.fontLigatures": true, // 连体字，效果不太好形容，见 https://typeof.net/Iosevka 最后一部分
     "editor.minimap.enabled": false, // 我个人不用minimap，就是右边那个东西
     "editor.dragAndDrop": false, // 选中文字后，可以拖动它们调整位置。我是不需要
@@ -44,7 +45,8 @@
 },
     "code-runner.showExecutionMessage": true,
     "files.associations": {
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "iosfwd": "cpp"
     },
 
 }
