@@ -10,5 +10,6 @@ int main( )
     // cout << "a+b=" << sum << endl;
     cout<< a << endl
         << b << endl;
+    system("pause");
     return 0;
 }

@@ -15,7 +15,6 @@ public:
     {
         h = i;  //! 发生矛盾，const 不能改变
     }
-
     private:
         mutable int cnt;
         const int h;
